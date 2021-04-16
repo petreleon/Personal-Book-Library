@@ -2,7 +2,7 @@ export default new class {
   constructor() {
     if (localStorage.getItem("books") === null) {
       this.data = {
-        nextBookID:2,
+        nextBookID:8,
         nextFolderID:2,
         folders: [
           {
