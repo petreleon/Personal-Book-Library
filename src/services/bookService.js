@@ -15,7 +15,6 @@ export default new class {
                 author: "Isabel Wilkerson",
                 description: "The Pulitzer Prize–winning, bestselling author of The Warmth of Other Suns examines the unspoken caste system that has shaped America and shows how our lives today are still defined by a hierarchy of human divisions.",
                 rating1: 'like',
-                rating1: "like",
                 rating2: 4
               },
               {
@@ -24,7 +23,6 @@ export default new class {
                 author: "Maggie O’Farrell",
                 description: "In 1580’s England, during the Black Plague a young Latin tutor falls in love with an extraordinary, eccentric young woman in this “exceptional historical novel” (The New Yorker) and best-selling winner of the Women’s Prize for Fiction.",
                 rating1: 'like',
-                rating1: "like",
                 rating2: 4
               },
               {
@@ -33,7 +31,6 @@ export default new class {
                 author: "Robert B. Reich",
                 description: "From the best-selling author of The Common Good comes an urgent analysis of how the “rigged” systems of American politics and power operate, how this status quo came to be, and how average citizens can enact change.",
                 rating1: 'like',
-                rating1: "like",
                 rating2: 4
               },
               {
@@ -42,7 +39,6 @@ export default new class {
                 author: "Kiley Reid",
                 description: "A striking and surprising debut novel from an exhilarating new voice, Such a Fun Age is a page-turning and big-hearted story about race and privilege, set around a young black babysitter, her well-intentioned employer, and a surprising connection that threatens to undo them both.",
                 rating1: 'like',
-                rating1: "like",
                 rating2: 4
               }
             ]
@@ -57,7 +53,6 @@ export default new class {
                 author: "Ann Napolitano",
                 description: "Dear Edward is at once a transcendent coming-of-age story, a multidimensional portrait of an unforgettable cast of characters, and a breathtaking illustration of all the ways a broken heart learns to love again.",
                 rating1: 'like',
-                rating1: "like",
                 rating2: 4
               },
               {
@@ -66,7 +61,6 @@ export default new class {
                 author: "Glennon Doyle",
                 description: "In her most revealing and powerful memoir yet, the activist, speaker, bestselling author, and “patron saint of female empowerment” (People) explores the joy and peace we discover when we stop striving to meet others’ expectations and start trusting the voice deep within us.",
                 rating1: 'like',
-                rating1: "like",
                 rating2: 4
               },
               {
@@ -75,7 +69,6 @@ export default new class {
                 author: "Erik Larson",
                 description: "The author of The Devil in the White City and Dead Wake delivers an intimate chronicle of Winston Churchill and London during the Blitz—an inspiring portrait of courage and leadership in a time of unprecedented crisis.",
                 rating1: 'like',
-                rating1: "like",
                 rating2: 4
               }
             ]
@@ -143,3 +136,4 @@ export default new class {
     this.add_book(toFolderID, book)
     this.delete_book(fromFolderID, book.bookID)
   }
+}()
