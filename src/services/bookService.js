@@ -78,6 +78,7 @@ export default new class {
       }
       this.save()
     
+      this.get();
     }
     else {
       this.get()
@@ -88,6 +89,7 @@ export default new class {
   }
   save() {
     localStorage.setItem("books", JSON.stringify(this.data))
+    this.data = JSON.parse(localStorage.getItem("books"));
   }
 
   get() {
@@ -143,5 +145,4 @@ export default new class {
     this.add_book(toFolderID, book)
     this.delete_book(fromFolderID, book.bookID)
   }
-
-}
+}()
