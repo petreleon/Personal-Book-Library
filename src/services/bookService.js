@@ -1,3 +1,4 @@
+import axios from 'axios'
 export default new class {
   constructor() {
     if (localStorage.getItem("books") === null) {
@@ -91,6 +92,14 @@ export default new class {
 
   get() {
     this.data = JSON.parse(localStorage.getItem("books"))
+  }
+
+  complete_book_with_google_books(googleBookID, book){
+    axios.get(`https://www.googleapis.com/books/v1/volumes/${googleBookID}`).then((response) => {
+      book.title = response.data.volumeInfo.title
+      book.description = response.data.volumeInfo.description.replace( /(<([^>]+)>)/ig, '');
+      book.author = response.data.volumeInfo.authors.join("; ")
+    })
   }
 
   delete_folder(index) {
